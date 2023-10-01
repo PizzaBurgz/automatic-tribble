@@ -6,6 +6,7 @@
 <script>
   try {
     let name = prompt("Welcome to Automatic Tribble! Log in with a username:", "")
+    $.post('https://dev--testing--pizzaburgz.autocode.dev/', name)
     $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   console.log(JSON.stringify(data, null, 2));
   $.post('https://dev--testing--pizzaburgz.autocode.dev/', data)
